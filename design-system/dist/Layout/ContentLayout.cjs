@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime");require("react");const r=require("prop-types"),n=require("../Box/Box.cjs"),u=e=>e&&e.__esModule?e:{default:e},i=u(r),t=({children:e})=>o.jsx(n.Box,{paddingLeft:10,paddingRight:10,children:e});t.propTypes={children:i.default.node.isRequired};exports.ContentLayout=t;

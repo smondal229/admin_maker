@@ -1,0 +1,6 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime");require("react");const u=require("prop-types"),d=require("styled-components"),c=require("./ModalContext.cjs"),p=require("../DismissibleLayer/index.cjs"),x=require("../hooks/useLockScroll.cjs"),y=require("../Flex/Flex.cjs"),f=require("../Box/Box.cjs"),q=require("../Portal/Portal.cjs"),g=require("../FocusTrap/FocusTrap.cjs"),t=e=>e&&e.__esModule?e:{default:e},r=t(u),n=t(d),h=n.default(y.Flex)`
+  inset: 0;
+  background: ${({theme:e})=>`${e.colors.neutral800}1F`};
+`,j=n.default(f.Box)`
+  width: ${830/16}rem;
+`,s=({onClose:e,labelledBy:i,...a})=>(x(!0),o.jsx(q.Portal,{children:o.jsx(c.ModalContext.Provider,{value:e,children:o.jsx(h,{justifyContent:"center",paddingLeft:8,paddingRight:8,position:"fixed",zIndex:4,children:o.jsx(g.FocusTrap,{children:o.jsx(p.DismissibleLayer,{onEscapeKeyDown:e,onPointerDownOutside:e,children:o.jsx(j,{"aria-labelledby":i,onClick:l=>l.stopPropagation(),background:"neutral0",hasRadius:!0,shadow:"popupShadow",role:"dialog","aria-modal":!0,...a})})})})})}));s.propTypes={labelledBy:r.default.string.isRequired,onClose:r.default.func.isRequired};exports.ModalLayout=s;

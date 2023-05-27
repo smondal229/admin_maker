@@ -1,0 +1,3 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const u=require("react/jsx-runtime");require("react");const d=require("prop-types"),a=require("styled-components"),n=require("../Flex/Flex.cjs"),r=e=>e&&e.__esModule?e:{default:e},l=r(d),c=r(a),p=c.default(n.Flex)`
+  display: ${({selected:e})=>e?"flex":"none"};
+`,t=({label:e,children:s,selected:o,...i})=>u.jsx(p,{selected:o,role:"group","aria-roledescription":"slide","aria-label":e,justifyContent:"center",height:"124px",...i,children:s});t.defaultProps={selected:!1};t.propTypes={children:l.default.node.isRequired,label:l.default.string.isRequired,selected:l.default.bool};exports.CarouselSlide=t;

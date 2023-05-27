@@ -1,0 +1,5 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("react/jsx-runtime"),c=require("react"),l=require("prop-types"),d=require("styled-components"),i=require("./GridContext.cjs"),f=require("../helpers/handleResponsiveValues.cjs"),p=require("../Box/Box.cjs"),a=e=>e&&e.__esModule?e:{default:e};function y(e){if(e&&e.__esModule)return e;const t=Object.create(null,{[Symbol.toStringTag]:{value:"Module"}});if(e){for(const r in e)if(r!=="default"){const n=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,n.get?n:{enumerable:!0,get:()=>e[r]})}}return t.default=e,Object.freeze(t)}const m=y(c),o=a(l),_=a(d),b=_.default(p.Box)`
+  display: grid;
+  grid-template-columns: repeat(${({gridCols:e})=>e}, 1fr);
+  ${({theme:e,gap:t})=>f("gap",t,e)}
+`,u=({gap:e,gridCols:t,...r})=>{const n=m.useMemo(()=>({gap:e,gridCols:t}),[e,t]);return s.jsx(i.GridContext.Provider,{value:n,children:s.jsx(b,{gap:e,gridCols:t,...r})})};u.defaultProps={gap:0,gridCols:12};u.propTypes={gap:o.default.oneOfType([o.default.number,o.default.arrayOf(o.default.number)]),gridCols:o.default.number};exports.Grid=u;

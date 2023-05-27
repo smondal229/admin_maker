@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("react/jsx-runtime");require("react");const o=e=>r.jsx("form",{...e,role:"search"});exports.SearchForm=o;

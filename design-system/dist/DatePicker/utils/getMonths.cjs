@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=()=>{const t=new Intl.DateTimeFormat(void 0,{month:"long"}).format;return Array(12).fill(null).map((o,e)=>t(new Date(1970,e,1)))};exports.getMonths=n;

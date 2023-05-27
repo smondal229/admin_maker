@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const c=200,l=15,u=(s,a)=>{const t=new Date().getFullYear(),n=s?.getFullYear()??t-c,o=a?.getFullYear()??t+l,r=[];for(let e=n;e<=o;e++)r.push(e);return r};exports.getYears=u;

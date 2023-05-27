@@ -1,0 +1,7 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("react/jsx-runtime");require("react");const f=require("prop-types"),x=require("styled-components"),p=require("../hooks/useId.cjs"),y=require("../Field/FieldContext.cjs"),b=require("../Typography/Typography.cjs"),h=require("../Field/Field.cjs"),q=require("../Flex/Flex.cjs"),g=require("../Box/Box.cjs"),j=require("../Field/FieldHint.cjs"),F=require("../Field/FieldError.cjs"),T=require("../BaseCheckbox/BaseCheckbox.cjs"),u=r=>r&&r.__esModule?r:{default:r},e=u(f),C=u(x),k=C.default(b.Typography)`
+  display: flex;
+  align-items: flex-start;
+  * {
+    cursor: ${({disabled:r})=>r?"not-allowed":"pointer"};
+  }
+`,_=r=>{const{id:o}=y.useField();return t.jsx(T.BaseCheckbox,{id:o,...r})},d=({children:r,disabled:o,id:a,hint:l,error:n,...c})=>{const i=p.useId(a);let s;return n?s=`${i}-error`:l&&(s=`${i}-hint`),t.jsx(h.Field,{id:i,hint:l,error:n,children:t.jsxs(q.Flex,{direction:"column",alignItems:"stretch",gap:1,children:[t.jsxs(k,{as:"label",textColor:"neutral800",disabled:o,children:[t.jsx(_,{disabled:o,"aria-describedby":s,...c}),t.jsx(g.Box,{paddingLeft:2,children:r})]}),t.jsx(j.FieldHint,{}),t.jsx(F.FieldError,{})]})})};d.defaultProps={disabled:!1,id:void 0,error:void 0,hint:void 0};d.propTypes={children:e.default.node.isRequired,disabled:e.default.bool,error:e.default.string,hint:e.default.oneOfType([e.default.string,e.default.node,e.default.arrayOf(e.default.node)]),id:e.default.oneOfType([e.default.string,e.default.number])};exports.Checkbox=d;
